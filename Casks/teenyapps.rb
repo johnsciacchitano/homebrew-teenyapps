@@ -4,7 +4,7 @@ cask "teenyapps" do
 
   url "https://teenyapps.com"
   name "TeenyApps"
-  desc "Complete  suite"
+  desc "Complete collection of Teeny menu bar utilities"
   homepage "https://teenyapps.com/"
 
   depends_on cask: %w[
@@ -18,4 +18,7 @@ cask "teenyapps" do
     teenystat
     teenytool
   ]
+
+  # Meta-cask: no artifact of its own, it just pulls in the nine apps above.
+  stage_only true
 end
