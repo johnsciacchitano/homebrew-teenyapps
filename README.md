@@ -4,10 +4,24 @@ Homebrew tap for the [TeenyApps](https://teenyapps.com) family of macOS menu bar
 
 ## Install
 
+One command per app — Homebrew auto-taps on first use:
+
 ```bash
-brew tap johnsciacchitano/teenyapps
-brew install --cask teenyclip       # one app
-brew install --cask teenyapps       # all nine
+brew install --cask johnsciacchitano/teenyapps/teenyclip
+```
+
+Install the whole suite in one shot:
+
+```bash
+brew install --cask johnsciacchitano/teenyapps/teenyapps
+```
+
+After the first install you can drop the `johnsciacchitano/teenyapps/` prefix:
+
+```bash
+brew install --cask teenycolor
+brew upgrade --cask teenyclip
+brew uninstall --cask teenyclip
 ```
 
 ## Available casks
