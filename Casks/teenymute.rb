@@ -1,6 +1,6 @@
 cask "teenymute" do
   version "1.0.0"
-  sha256 "b04c61f5c055db409f1f54976f261ececb5942b53ba2b0c8727d3c3d2498e1c4"
+  sha256 "c2cb50213154e7c6eae4adf4b821cbf7e0578e211ea6aaf5bce86a0c7e562de7"
 
   url "https://teenymute.com/downloads/TeenyMute-#{version}.dmg"
   name "TeenyMute"

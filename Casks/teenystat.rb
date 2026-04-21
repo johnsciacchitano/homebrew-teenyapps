@@ -1,6 +1,6 @@
 cask "teenystat" do
   version "1.0.0"
-  sha256 "6297e9286cd35104727131f443954a960c4cf9fe4a9f9cc563b0148fbf0bb0e6"
+  sha256 "90852767a8b4441a30936b442cf14a64f51f471284f589acb554b4b5aa8992d4"
 
   url "https://teenystat.com/downloads/TeenyStat-#{version}.dmg"
   name "TeenyStat"
