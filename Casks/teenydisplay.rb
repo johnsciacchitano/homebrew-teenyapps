@@ -1,6 +1,6 @@
 cask "teenydisplay" do
   version "1.0.0"
-  sha256 "682088cd5a2c1d39fcd6c35baf972ce9c9b8c5e3adc41e7d2306618489aeee20"
+  sha256 "85883f8c7b47131d202b15b822f2e721057549eb90458b9d4900cb1dcbe5a377"
 
   url "https://teenydisplay.com/downloads/TeenyDisplay-#{version}.dmg"
   name "TeenyDisplay"

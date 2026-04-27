@@ -1,6 +1,6 @@
 cask "teenysound" do
   version "1.0.0"
-  sha256 "a8ab5ce8ef9898b3aa607651bf78c81a43a668713bca23fdc148459cab2c6e7b"
+  sha256 "41d71e9dabf32c16edcd7564d3208658aaa13b98e7a89c965d33322839bc6253"
 
   url "https://teenysound.com/downloads/TeenySound-#{version}.dmg"
   name "TeenySound"

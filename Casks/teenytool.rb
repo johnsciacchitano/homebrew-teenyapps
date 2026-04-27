@@ -1,6 +1,6 @@
 cask "teenytool" do
   version "1.0.0"
-  sha256 "b12b858c4680334ba6448b9c9343ca93020f4288edc4ff43f9b4557c2c8404b3"
+  sha256 "e724b22b34e0cc47710a98da6bdc16aa6260d267c20ce394d001608c487753d2"
 
   url "https://teenytool.com/downloads/TeenyTool-#{version}.dmg"
   name "TeenyTool"

@@ -1,6 +1,6 @@
 cask "teenyshelf" do
   version "1.0.0"
-  sha256 "b86d8b922cbdb2dc6b9e9e6353a063b20fe9af3938232045f9bfd540a0dfb2c5"
+  sha256 "5b2a1eddc8863dbd37d97574b3a2cb1ce1f727a028da8e95cdfea4ad393d834b"
 
   url "https://teenyshelf.com/downloads/TeenyShelf-#{version}.dmg"
   name "TeenyShelf"

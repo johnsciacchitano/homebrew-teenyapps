@@ -1,6 +1,6 @@
 cask "teenyclip" do
   version "1.0.0"
-  sha256 "a9f8ce63fe0bd291a7104400557a22b372265b122fada2c8f55e9a419bd5103e"
+  sha256 "41801a47cb1f8c2f15aac5b30d5281ddd206a2477ca81245882e658e8e44baef"
 
   url "https://teenyclip.com/downloads/TeenyClip-#{version}.dmg"
   name "TeenyClip"
