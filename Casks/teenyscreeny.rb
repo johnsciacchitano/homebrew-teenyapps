@@ -1,6 +1,6 @@
 cask "teenyscreeny" do
-  version "1.0.1"
-  sha256 "c77a2472cdb14b9698fb5fab642b564b29d050bdd03ad38864e9ed710cf07d7d"
+  version "1.0.2"
+  sha256 "24a0aece4bd2e568a77530c360e216cc977f2a36f438dcab00076efebd35085f"
 
   url "https://teenyscreeny.com/downloads/TeenyScreeny-#{version}.dmg"
   name "TeenyScreeny"
