@@ -1,6 +1,6 @@
 cask "teenyclip" do
-  version "1.0.0"
-  sha256 "41801a47cb1f8c2f15aac5b30d5281ddd206a2477ca81245882e658e8e44baef"
+  version "1.0.2"
+  sha256 "9dbf64ea9e880feeac7949963d3b20ff59f97303cd05a13f43341004b00be34b"
 
   url "https://teenyclip.com/downloads/TeenyClip-#{version}.dmg"
   name "TeenyClip"
@@ -13,15 +13,9 @@ cask "teenyclip" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "TeenyClip.app"
 
-  zap trash: [
-    "~/Library/Application Support/TeenyClip",
-    "~/Library/Caches/com.teenyapps.TeenyClip",
-    "~/Library/HTTPStorages/com.teenyapps.TeenyClip",
-    "~/Library/Preferences/com.teenyapps.TeenyClip.plist",
-    "~/Library/Saved Application State/com.teenyapps.TeenyClip.savedState",
-  ]
+  zap trash: "~/Library/Application Support/com.teenyapps.TeenyClip"
 end
