@@ -1,10 +1,10 @@
 cask "teenymute" do
-  version "1.0.0"
-  sha256 "d3f38b62ddc15db1e332183b67aeebc477f99acdac3406ff455ed6086ee2209c"
+  version "1.0.1,2"
+  sha256 "8d564f0571866cd4ef12efd0494db16c102baab4fa9a5fc0ea56e24b7b44bb88"
 
-  url "https://teenymute.com/downloads/TeenyMute-#{version}.dmg"
+  url "https://teenymute.com/downloads/TeenyMute-#{version.csv.first}.dmg"
   name "TeenyMute"
-  desc "Menu bar mic and audio mute toggle"
+  desc "Menu bar microphone mute and push-to-talk control"
   homepage "https://teenymute.com/"
 
   livecheck do
@@ -13,12 +13,11 @@ cask "teenymute" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "TeenyMute.app"
 
   zap trash: [
-    "~/Library/Application Support/TeenyMute",
     "~/Library/Caches/com.teenyapps.TeenyMute",
     "~/Library/HTTPStorages/com.teenyapps.TeenyMute",
     "~/Library/Preferences/com.teenyapps.TeenyMute.plist",
