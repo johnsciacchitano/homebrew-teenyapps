@@ -1,8 +1,8 @@
 cask "teenyshelf" do
-  version "1.0.0"
-  sha256 "5b2a1eddc8863dbd37d97574b3a2cb1ce1f727a028da8e95cdfea4ad393d834b"
+  version "1.0.1,2"
+  sha256 "7dad6257823e8c53b834231085dcdc65d3b00b5c04c01815fbe7f6678a763095"
 
-  url "https://teenyshelf.com/downloads/TeenyShelf-#{version}.dmg"
+  url "https://teenyshelf.com/downloads/TeenyShelf-#{version.csv.first}.dmg"
   name "TeenyShelf"
   desc "Drag-and-drop file shelf for the menu bar"
   homepage "https://teenyshelf.com/"
@@ -13,11 +13,12 @@ cask "teenyshelf" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "TeenyShelf.app"
 
   zap trash: [
+    "~/Library/Application Support/com.teenyapps.TeenyShelf",
     "~/Library/Application Support/TeenyShelf",
     "~/Library/Caches/com.teenyapps.TeenyShelf",
     "~/Library/HTTPStorages/com.teenyapps.TeenyShelf",
