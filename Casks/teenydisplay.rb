@@ -1,6 +1,6 @@
 cask "teenydisplay" do
-  version "1.0.0"
-  sha256 "85883f8c7b47131d202b15b822f2e721057549eb90458b9d4900cb1dcbe5a377"
+  version "1.0.2"
+  sha256 "40fb67c7a7cd41e4e932603eff96437f3042e5e6adaa2bcb76379a8403036e2a"
 
   url "https://teenydisplay.com/downloads/TeenyDisplay-#{version.csv.first}.dmg"
   name "TeenyDisplay"
@@ -8,7 +8,8 @@ cask "teenydisplay" do
   homepage "https://teenydisplay.com/"
 
   livecheck do
-    skip "Update feed temporarily withdrawn"
+    url "https://teenydisplay.com/appcast.xml"
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
