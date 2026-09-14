@@ -1,6 +1,6 @@
 cask "teenymute" do
-  version "1.0.0"
-  sha256 "d3f38b62ddc15db1e332183b67aeebc477f99acdac3406ff455ed6086ee2209c"
+  version "1.0.2"
+  sha256 "b3a9e0e58b7afdb991c2889ec29dba53f698285e2398964ca4cd74d306a166ee"
 
   url "https://teenymute.com/downloads/TeenyMute-#{version.csv.first}.dmg"
   name "TeenyMute"
@@ -8,7 +8,8 @@ cask "teenymute" do
   homepage "https://teenymute.com/"
 
   livecheck do
-    skip "Update feed temporarily withdrawn"
+    url "https://teenymute.com/appcast.xml"
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
