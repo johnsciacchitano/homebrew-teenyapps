@@ -1,6 +1,6 @@
 cask "teenyclip" do
-  version "1.0.1"
-  sha256 "6b5dd518c99ebc15f1de970a97f5f6583c3ac2a6252ff4172da2f9f7a9cf6766"
+  version "1.0.3"
+  sha256 "c1430375dc5f10e66e80c3b50dd92a8fb44bb6f76137a0954ac1fc6d61afdb91"
 
   url "https://teenyclip.com/downloads/TeenyClip-#{version.csv.first}.dmg"
   name "TeenyClip"
@@ -9,7 +9,7 @@ cask "teenyclip" do
 
   livecheck do
     url "https://teenyclip.com/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
