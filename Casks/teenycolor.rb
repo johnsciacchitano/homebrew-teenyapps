@@ -1,6 +1,6 @@
 cask "teenycolor" do
-  version "1.0.1,2"
-  sha256 "7d19f9d04066703510a97de442d1f17275a4d68525dca70eed1d991032ea1395"
+  version "1.0.0"
+  sha256 "2527b8ea3c2c18a7135048ef431c705008651ea8b211cb4e078249f7888b5085"
 
   url "https://teenycolor.com/downloads/TeenyColor-#{version.csv.first}.dmg"
   name "TeenyColor"
