@@ -1,6 +1,6 @@
 cask "teenycolor" do
-  version "1.0.0"
-  sha256 "2527b8ea3c2c18a7135048ef431c705008651ea8b211cb4e078249f7888b5085"
+  version "1.0.2"
+  sha256 "be84bc9f7496d7a2230c18f45e7918b1d1c83d5a51107ef08252a5cd8a7c8285"
 
   url "https://teenycolor.com/downloads/TeenyColor-#{version.csv.first}.dmg"
   name "TeenyColor"
@@ -8,7 +8,8 @@ cask "teenycolor" do
   homepage "https://teenycolor.com/"
 
   livecheck do
-    skip "Update feed temporarily withdrawn"
+    url "https://teenycolor.com/appcast.xml"
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
