@@ -8,8 +8,7 @@ cask "teenymute" do
   homepage "https://teenymute.com/"
 
   livecheck do
-    url "https://teenymute.com/appcast.xml"
-    strategy :sparkle
+    skip "Update feed temporarily withdrawn"
   end
 
   auto_updates true
